@@ -1,9 +1,7 @@
-dofile minetest.get_modpath 'living_mese' .. '/recipes.lua'
-
-minetest.register_node 'fooblock:fooblock',
+minetest.register_node 'living_mese:fooblock',
   description: 'foo'
   tiles:
-    'fooblock.png'
+    { 'lines3_chaotic.png' }
   groups:
     oddly_breakable_by_hand: 1
 
