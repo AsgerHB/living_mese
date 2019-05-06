@@ -35,7 +35,7 @@ get_neighbors = (pos) ->
 chaotic_step = (pos, node, active_object_count, active_object_count_wider) -> 
   neighbors = get_neighbors(pos)
 
-  if neighbors.count >=4
+  if neighbors.count >=2
     minetest.set_node(pos, { name:'air' })
     return
 
